@@ -7,12 +7,18 @@ export default function Home() {
   return (
     <div className='h-screen w-screen flex flex-col justify-center items-center'>
         <h1 className='text-3xl mb-10 font-bold'>PL Poker</h1>
-        <div className='flex justify-center items-center'>
-            <Link to="/NewSession" className="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline">
-                New Session
+        <div className='flex gap-2'>
+            <Link
+              to="/NewSession"
+              className="flex justify-center rounded-md bg-teal-900 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-900"
+            >
+              New Session
             </Link>
-            <Link to="/JoinSession" className="border border-teal-500 bg-teal-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-teal-600 focus:outline-none focus:shadow-outline"> 
-                Join Session
+            <Link
+              to="/JoinSession"
+              className="flex justify-center rounded-md bg-teal-600 px-4 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+            >
+              Join Session
             </Link>
         </div>
     </div>
