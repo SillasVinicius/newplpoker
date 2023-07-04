@@ -1,15 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function JoinSession() {
+  const navigate = useNavigate();
+
   const safeSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
     const idSession = event.target[0].value;
     const nameUser = event.target[1].value;
-
+    
     console.log({ idSession, nameUser });
+
+    navigate("/PlanningPoker");
   };
 
   return (

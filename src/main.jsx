@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import Error from './pages/Error/Error';
 import JoinSession from './pages/JoinSession/JoinSession';
 import NewSession from './pages/NewSession/NewSession';
+import PlanningPoker from './pages/PlanningPoker/PlanningPoker';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/NewSession",
     element: <NewSession />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/PlanningPoker",
+    element: <PlanningPoker />,
     errorElement: <Error />,
   }
 ]);
